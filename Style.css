@@ -1,0 +1,215 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #eeeeee;
+}
+li{
+    list-style: none;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav{
+    background-color:#2b7abd;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    
+}
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul li,a{
+    color:#fff ;
+    margin-right: 9px;
+
+}
+nav ul li:nth-child(1){
+    margin-right: 0;
+}
+
+nav ul li:nth-child(5){
+    width:140px;
+    height: 50px;
+    background-color: #df1a0c;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+
+}
+nav ul li:nth-child(6) {
+   
+    display: flex; 
+    align-items: center; 
+    /* line-height: 100; */
+}
+
+nav ul li:nth-child(6) input {
+    width: 300px;
+    height: 40px;
+    margin-right: 3px;
+}
+
+nav ul li:nth-child(6) i {
+    background-color: #e5e6e9;
+    height: 40px;
+    width: 40px;  
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    
+}
+nav ul li:nth-child(7) {
+    margin-left: 15px;
+}
+
+/* ------------------------------*/
+section {
+    max-width: 700px; /* Đặt max-width cho section */
+    margin: auto; /* Căn giữa section */
+    background-color: #fff;
+}
+
+section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+section ul li:first-child {
+    font-weight: bold;
+    display: block;
+    background-color: #fff; /* Nền trắng */
+    padding: 5px 10px; /* Đệm cho văn bản */
+}
+
+section ul li:nth-child(n+2) {
+    display: inline-flex; 
+    justify-content: center;
+    align-items: center;
+    margin-right: 2px;
+    margin-left: 5px; 
+    margin-bottom: 5px;
+    height: 20px;
+    background-color: #555555;
+    padding: 0 10px; 
+    
+}
+section ul li:nth-child(n+2) a {
+    color: #fff; 
+    font-size: 12px;
+    text-decoration: none;
+}
+
+hr {
+    border: 1px solid #e5e6e9; 
+    margin: 2px 0;
+}
+/*------------slide-----------*/
+.slider {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: auto;
+    position: relative;
+    width: 900px; /* Chiều rộng tổng thể của slider */
+    overflow: hidden; 
+
+}
+
+.slider-show {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 700px; 
+    margin-top: 4px;
+}
+
+.slider-item {
+    display: flex; /* Cho phép chứa 3 ảnh ngang */
+    flex: 0 0 700px; /* Mỗi slide chiếm 900px */
+}
+
+.slider-item img {
+    bottom: 50%;
+    width: 225px; /* Chiều rộng mỗi ảnh */
+    height: auto;
+    object-fit: cover; 
+    margin-right: 2px; /* Khoảng cách giữa các ảnh */
+    margin-left: 5px;
+    margin-bottom: 5px;
+}
+.slider2 {
+    position: absolute; /* Đặt slider2 chồng lên slider1 */
+    top: 45.9%;
+    height: 80px; /* Chiếm 1/3 chiều cao của slider */
+    background-color: transparent; /* Xóa nền */
+    z-index: 10; /* Đặt trên slider1 */
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    overflow: hidden; 
+    
+
+}
+
+.slider2-show {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 700px; /* Chiều rộng chứa 2 slide (900px mỗi slide) */
+    margin-top: 4px;
+}
+
+.slider2-item {
+    display: flex; /* Cho phép chứa 3 ảnh ngang */
+    flex: 0 0 700px; /* Mỗi slide chiếm 900px */
+}
+
+.caption-wrapper {
+    background-color: rgba(0, 0, 0, 0.5);
+    bottom: 50%;
+    width: 225px; /* Chiều rộng mỗi ảnh */
+    height: auto;
+    object-fit: cover; 
+    margin-right: 2px; /* Khoảng cách giữa các ảnh */
+    margin-left: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+
+.btn:hover {
+    color: white;
+}
+.btn {
+    font-size: 35px;
+    color: #999;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.btn-left {
+    left: 10px;
+}
+
+.btn-right {
+    right: 10px;
+}
+
+
+
+
+    
+
