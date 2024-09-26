@@ -14,7 +14,7 @@ ul{
 }
 a{
     text-decoration: none;
-    font-size: 16px;
+    font-size: 15px;
 }
 nav{
     background-color:#2b7abd;
@@ -29,7 +29,80 @@ nav ul{
 }
 nav ul li,a{
     color:#fff ;
-    margin-right: 12px;
+    margin-right: 1px;
+}
+/*----------------*/
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    position: relative; /* Giữ cho bảng hiển thị ở vị trí bên dưới */
+    display: inline-block; /* Hiển thị các mục trong cùng một dòng */
+    margin-right: 20px; /* Khoảng cách giữa các mục */
+}
+
+nav ul li:hover .table-type,
+.table-type:hover {
+    display: block;
+}
+
+nav ul li.table-parent {
+    position: relative;
+}
+
+.table-type {
+    display: none;
+    position: absolute;
+    top: 90%; 
+    left: 0;
+    width: 250px;
+    background-color: transparent; 
+    z-index: 100;
+    padding: 20px 0; 
+}
+.table2{
+    display: none;
+}
+.table-type table {
+    width: 120%;
+    border-collapse: collapse;
+    background-color: #fff;
+}
+
+.table-type td {
+    border: 1px solid #eeeeee;
+    padding: 10px;
+    margin-left: 20px;
+    text-align: left;
+    color:#333;
+}
+.table-type td i{
+    margin-right: 5px;
+}
+.table-type td a{
+    color:#333;
+}
+.table-parent:hover .table-type,.table-type:hover {
+    display: block; 
+}
+td:hover{
+    background-color: #eeeeee;
+
+}
+
+/*---------------slider--------------------------*/
+/* Đảm bảo slider nằm dưới bảng */
+.slider, .slider2 {
+    position: relative;
+    z-index: 0;
+}
+/* Đảm bảo slider nằm dưới bảng */
+.slider, .slider2 {
+    position: relative;
+    z-index: 0;
 }
 li:hover{ 
     color: #fff;
@@ -37,6 +110,7 @@ li:hover{
 }
 nav ul li:nth-child(1){
     margin-right: 0;
+    
 }
 li:first-child:hover{ 
     color: #2f52b2;
@@ -114,31 +188,60 @@ section ul li:first-child {
     display: block;
     background-color: #fff; 
     padding: 5px 10px;
+    align-items: center;
 }
 
 section ul li:nth-child(n+2) {
     display: inline-flex; 
-    justify-content: center;
+    margin-left: 5px;
+    justify-content:center;
     align-items: center;
-    margin-right: 2px;
-    margin-left: 5px; 
-    margin-bottom: 5px;
-    height: 20px;
-    background-color: #555555;
-    padding: 0 10px; 
-    
+    height: 30px;
+    background-color: #555555 ;
+    padding: 0 5px; 
+    border-radius: 2px;
 }
 section ul li:nth-child(n+2) a {
     color: #fff; 
     font-size: 12px;
+    margin-right: 5px;
     text-decoration: none;
 }
 
 hr {
     border: 1px solid #e5e6e9; 
-    margin: 2px 0;
+    margin: 1px 0;
+}
+.dropdown-table {
+    display: none; /* Ẩn bảng mặc định */
+    position: absolute;
+    top: 50px; /* Đặt bảng dưới menu */
+    left: 0;
+    background-color: white;
+    border: 1px solid #ddd;
+    z-index: 10;
+}
+
+.dropdown-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.dropdown-table table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+main{
+    max-width: 80%;
+    margin-right: 20%;
 }
 /*------------slide-----------*/
+main{
+    margin-right: 20%;
+}
 .slider {
     display: flex;
     justify-content: flex-start;
@@ -153,7 +256,7 @@ hr {
 .slider-show {
     display: flex;
     transition: transform 0.5s ease-in-out;
-    width: 700px; 
+    width: 100%; 
     margin-top: 4px;
 
 }
@@ -161,6 +264,7 @@ hr {
 .slider-item {
     display: flex;
     flex: 0 0 700px; 
+    
 }
 
 .slider-item img {
@@ -174,7 +278,7 @@ hr {
 }
 .slider2 {
     position: absolute; 
-    top: 48.8%;
+    top: 49.4%;
     height: 80px; 
     background-color: transparent; 
     z-index: 10; 
@@ -247,4 +351,3 @@ hr {
 
 
     
-
