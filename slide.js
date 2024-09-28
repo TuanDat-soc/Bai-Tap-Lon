@@ -26,8 +26,8 @@ function updateSlider() {
     let translateValue = -currentSlideIndex * 100; // Giá trị dịch chuyển theo phần trăm
 
     // Dịch chuyển slider 1
-    document.querySelector('.slider-show').style.transform = `translateX(${translateValue}%)`;
+    document.querySelector('.slider-top-show').style.transform = `translateX(${translateValue}%)`;
 
     // Dịch chuyển slider 2
-    document.querySelector('.slider2-show').style.transform = `translateX(${translateValue}%)`;
+    document.querySelector('.slider-bottom-show').style.transform = `translateX(${translateValue}%)`;
 }
