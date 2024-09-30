@@ -148,7 +148,7 @@ header ul li:hover a {
     background-color: #fff; 
     padding: 3px 5px;
     align-items: center;
-}section ul li:nth-child(n+2) {
+} #full-slider ul li:nth-child(n+2) {
     display: inline-flex; 
     margin-left: 5px;
     justify-content:center;
@@ -342,7 +342,126 @@ header ul li:hover a {
 .review li:nth-child(8) a{
     color:#fff;
 }
+/*----------right3-------------*/
+.right3 {
+    margin: 20px ;
+    width: 100%;
+    background-color: #fff;
+}
 
+.top-truyen ul {
+    list-style-type: none;
+    padding: 0 10px;
+    padding-top: 5px;
+    padding-bottom: 1px;
+    margin: 0;
+}
+
+.top-truyen ul li {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 15px 0;
+    border-bottom: 1px dotted #ccc; 
+    background-color: #fff;
+}
+.top-truyen ul li:last-child {
+    border: none;
+}
+
+.top-truyen .rank {
+    font-size: 24px;
+    font-weight: bold;
+    margin-right: 15px; 
+    width: 50px; 
+    text-align: center;
+
+}
+.top-truyen .info {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0;
+}
+
+.top-truyen .info a.title {
+    font-size: 18px;
+    color: #333;
+    text-decoration: none;
+}
+
+.top-truyen .info a.title:hover {
+    text-decoration: underline;
+}
+
+.top-truyen .info .viewed {
+    font-size: 14px;
+    color: #777;
+    display: flex;
+    align-items: center;
+}
+
+.top-truyen .info .viewed i {
+    margin-right: 5px;
+
+}
+.top-truyen li .rank{
+    font-weight: 100;
+}
+.top-truyen .rank {
+    width: 40px;
+    font-size: 35px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.top-truyen li:nth-child(2) .rank {
+    
+    color: #ff0000;
+}
+
+.top-truyen li:nth-child(3) .rank {
+    color: #f39c12;
+}
+
+.top-truyen li:nth-child(4) .rank {
+    color: #e67e22;
+}
+.top-truyen li:nth-child(5) .rank,
+.top-truyen li:nth-child(6) .rank,
+.top-truyen li:nth-child(7) .rank,
+.top-truyen li:nth-child(8) .rank,
+.top-truyen li:nth-child(9) .rank,
+.top-truyen li:nth-child(10) .rank,
+.top-truyen li:nth-child(11) .rank {
+    color: #3498db;
+}
+.top-truyen li:nth-child(12){
+    display: flex;
+    width: 40%; 
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+    background-color: #737373; 
+    color: #fff;
+    padding: 8px; 
+    border-radius: 20px;  
+    margin: 5px auto;    
+}
+.top-truyen li:last-child a {
+    display: block;
+    justify-content: center; 
+    align-items: center;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 0;
+    /* transition: background-color 0.3s; */
+}
+/*---------right4-------*/
+.right4 {
+    margin: 20px ;
+    width: 100%;
+    background-color: #fff;
+}
 
 
 /*----------footer--------(Dung)*/
