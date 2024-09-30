@@ -76,11 +76,13 @@ h2 {
     text-decoration: none; /* Xóa gạch chân */
 }
 
-.no-color-link:hover {
-    color: #0070c9; /* Giữ màu khi hover */
-    text-decoration: none; /* Xóa gạch chân khi hover */
+.no-underline {
+    text-decoration: none; /* Không có gạch chân khi bình thường */
 }
 
+.no-underline:hover {
+    text-decoration: underline; /* Hiện gạch chân khi hover */
+}
 /* Màu cho từng liên kết */
 .link-1 {
     color: white; 
