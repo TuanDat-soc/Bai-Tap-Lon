@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.wrapper {
+    
+    margin: 20px auto;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    overflow: hidden;
+    width: 60%; 
+    position: relative;
+    height: 100%;
+}
+
+.container {
+    /*width: 100%;*/
+    position: relative;
+    min-height: 100vh; /* Đảm bảo chiều cao của container chiếm toàn bộ màn hình */
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    color: #0070c9;
+}
+
+.header h2 {
+    font-size: 24px;
+}
+
+
+
+.top-divider {
+    border: none;
+    border-top: 2px solid #e2dfdf;
+    margin: 20px 0;
+    width: 120%;
+    margin-left: -30px;
+}
+
+.divider {
+    border: none;
+    border-top: 2px dashed #e2dfdf; 
+    width: 120%; /* Chiều rộng 100% của khung */
+    margin-left: -30px;
+}
+/* 5 khung xám nhỏ */
+.small-boxes {
+    display: flex;
+    justify-content: flex-start; /* Dịch chuyển các khung sang bên trái */
+    margin: 20px 0;
+}
+
+.small-box {
+    background-color: #515151;
+    padding: 10px;
+    width: 12%;
+    height: 0%;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgb(240, 238, 238);
+    cursor: pointer;
+    margin-right: 10px; /* Khoảng cách giữa các khung xám */
+    font-size: 10px; /* Giảm kích thước chữ bên trong khung */
+    color: #ffffff;
+}
+
+
+.story-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px; /* Khoảng cách giữa các truyện theo chiều ngang và dọc */
+    row-gap: 40px; /* Tăng khoảng cách giữa các hàng (truyện trên và dưới) */
+}
+
+.story {
+    padding: 10px;
+    text-align: center;
+    background-color: transparent;
+    border-radius: 5px;
+    position: relative;
+}
+
+.story img {
+    width: 110%;
+    height: 70%;
+    object-fit: cover;
+}
+
+.story h3 {
+    font-size: 16px;
+    margin: 10px 0 5px;
+}
+
+.story img.huy-chuong {
+    position: absolute; 
+    top: 30px; /* Điều chỉnh khoảng cách từ trên xuống */
+    left: 30px; /* Điều chỉnh khoảng cách từ trái sang */
+    width: 70px; /* Kích thước  */
+    height: 70px;
+    z-index: 2; /* Đảm bảo hình huy chương nằm trên ảnh truyện */
+}
+
+.no-color-link {
+    color: #000000; /* Màu chữ mặc định */
+    text-decoration: none; /* Xóa gạch chân */
+}
+
+.no-underline {
+    text-decoration: none; /* Không có gạch chân khi bình thường */
+}
+
+.no-underline:hover {
+    text-decoration: underline; /* Hiện gạch chân khi hover */
+}
+
+
+.link-1{
+    color: #0070c9;
+}
+
+.link-2{
+    color: #ffffff;
+}
+.status {
+    display: inline-block;
+    padding: 5px 10px;
+    color: #898989;
+    border-radius: 5px;
+    background-color: transparent;
+    font-size: 16px;
+    margin-top: -15px;
+
+}
+
+.view-more {
+
+    text-align: center;
+    margin-top: 100px; /* Tăng khoảng cách giữa khung nội dung và "Xem Thêm" */
+    padding-bottom: 1%px;
+    background-color: white;
+}
+
+.view-more a {
+    text-decoration: none;
+    color: white;
+    background-color: #7e7d7d;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    display: inline-block;
+    border-radius: 50px;
+    top: 60;
+}
+
+.view-more a::after {
+    content: "\25BC"; /* Mã Unicode cho mũi tên xuống */
+    font-size: 14px;
+    margin-left: 2px; /* Tạo khoảng cách giữa chữ và mũi tên */
+}
+
