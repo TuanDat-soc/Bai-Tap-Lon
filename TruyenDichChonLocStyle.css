@@ -130,11 +130,11 @@ header ul li:hover a {
     margin-left: 3px ;
     
 }
-/* .slider1{
+.slider1{
     width: 100%;
     padding: 5px;
     background-color: rgb(150, 37, 37);
-} */
+}
 
 #full-slider {
     max-width:710px; 
@@ -142,18 +142,17 @@ header ul li:hover a {
     padding: 5px;
     margin-left: 250px ;
     
-} .breadcrumb {
-    padding: 1px;
+}
+.full-slider .breadcrumb {
+    padding: 10px;
     background-color: #eeeeee;
     font-size: 14px;
 }
 
-.breadcrumb a {
-    color: #595959; 
-    margin: 0 5px;
-}
-.breadcrumb a:hover {
-    text-decoration:underline;
+.full-slider .breadcrumb a {
+    color: #595959;
+    text-decoration: none;
+    margin: 5px;
 }
 hr {
     width: 100%;
@@ -499,38 +498,38 @@ footer {
 /* slider test */
 .boxhuy {
     position: absolute;
-    margin-top: 35px;
-    left: 256px; 
-    top: 66px;   
-    width: 696px; 
-    height: auto;
-    background-color: rgb(255, 255, 255); 
-    border: 1px solid rgb(255, 255, 255); 
-    padding-left: 10px; 
-    box-sizing: border-box;
+    margin-top: 50px;
+    left: 256px; /* x */
+    top: 66px;   /* y */
+    width: 696px; /* w */
+    height: auto; /* h */
+    background-color: rgb(255, 255, 255); /* Màu nền của khung */
+    border: 1px solid rgb(255, 255, 255); /* Viền của khung */
+    padding: 10px; /* Tạo khoảng cách 10px bên trong khung */
+    box-sizing: border-box; /* Đảm bảo padding không ảnh hưởng đến kích thước khung */
 }
 
 .contenthuy {
     display: flex;
-    align-items: flex-start;
-    padding: 10px 0; 
+    align-items: flex-start; /* Căn lề trên cùng */
+    padding: 10px 0; /* Khoảng cách trên dưới */
 }
 
 .contenthuy .left-column {
-    margin-right: 20px;
+    margin-right: 20px; /* Khoảng cách giữa ảnh và cột văn bản */
 }
 
 .contenthuy .left-column img {
-    width: 35px;
-    height: 55px;
+    width: 35px; /* Kích thước chiều rộng */
+    height: 55px; /* Kích thước chiều cao */
     display: block;
-    margin-left: 10px; 
+    margin-left: 10px; /* Khoảng cách bên trái của ảnh */
 }
 
 .contenthuy .right-column {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start; 
+    justify-content: flex-start; /* Đảm bảo văn bản nằm bên trên */
 }
 
 .contenthuy .right-column a:hover {
@@ -538,28 +537,28 @@ footer {
 }
 .contenthuy .a{
     margin: 0;
-    font-size: 17px; 
+    font-size: 17px; /* Kích thước chữ */
 }
 
 .contenthuy .row {
     display: flex;
-    margin-bottom: 8px; 
-    width: 100%;
+    margin-bottom: 8px; /* Khoảng cách giữa các hàng */
+    width: 100%; /* Chiều rộng tự động */
 }
 
 .contenthuy .col {
-    flex: 1; 
-    margin-right: 2px;
-    width: 800px; 
+    flex: 1; /* Tự động điều chỉnh chiều rộng */
+    margin-right: 2px; /* Khoảng cách giữa các cột */
+    width: 800px; /* Chiều rộng của mỗi cột */
 }
 
 .contenthuy .title {
-    text-align: left; 
-    width: auto;
+    text-align: left; /* Căn trái cho tiêu đề */
+    width: auto; /* Cho phép chiều rộng tự động */
 }
 
 .contenthuy .status {
-    margin-left: 90px;
+    margin-left: 90px; /* Căn trái cho trạng thái */
     margin-top: 1px;
 }
 .contenthuy .tag.full {
@@ -589,25 +588,21 @@ footer {
     margin-left: 8px;
 }
 .mucluc {
-    display: flex;
-    justify-content: center;
-    background-color: #fff;
-    width: 100%;
-}
+    display: inline-block;
+  }
   
-.mucluc a {
+  .mucluc a {
     color: black;
     float: left;
     padding: 8px 16px;
     text-decoration: none;
-    text-align: center;
     transition: background-color .3s;
-}
+  }
   
-.mucluc a.active {
-    background-color: #2f52b2;
+  .mucluc a.active {
+    background-color: #0026ff;
     color: white;
-}
-.mucluc a:hover:not(.active) {
+  }
+  .mucluc a:hover:not(.active) {
     background-color: #ddd;
-}
+  }
