@@ -1,0 +1,140 @@
+#full-slider, #right {
+    width: 100%;
+    float: left;
+    box-sizing: border-box;
+    padding: 1px 5px;
+    margin-left: 3px ;
+}
+.slider-top, .slider2 {
+    position: relative;
+    z-index: 0;
+}#full-slider {
+    max-width:710px; 
+    margin: 20px auto; 
+    padding: 5px;
+    margin-left: 250px ;
+    background-color: #fff;
+}section ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}section ul li:first-child {
+    font-weight: bold;
+    display: block;
+    background-color: #fff; 
+    padding: 3px 5px;
+    align-items: center;
+} .slider1 ul li:nth-child(n+2) {
+    display: inline-flex; 
+    margin-left: 5px;
+    justify-content:center;
+    align-items: center;
+    height: 30px;
+    background-color: #555555 ;
+    margin-top:5px;
+    padding: 0 5px; 
+    border-radius: 2px;
+}section ul li:nth-child(n+2) a {
+    color: #fff; 
+    font-size: 12px;
+    margin-right: 5px;
+    text-decoration: none;
+}hr {
+    width: 100%;
+    border: 1px solid #e5e6e9; 
+    margin: 1px 0;
+}
+.slider-top {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: auto;
+    position: relative;
+    width: 700px; 
+    overflow: hidden; 
+
+}.slider-top-show {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%; 
+    margin-top: 4px;
+
+}.slider-item {
+    display: flex;
+    flex: 0 0 700px; 
+}.slider-item img {
+    bottom: 50%;
+    width: 225px;
+    height: auto;
+    object-fit: cover; 
+    margin-right: 2px; 
+    margin-left: 5px;
+    margin-bottom: 5px;
+}.slider-bottom {
+    display: flex; /* Sử dụng flexbox cho bố cục */
+    justify-content: space-between; /* Đảm bảo khoảng cách giữa các cột */
+    width: 100%; /* Chiếm toàn bộ chiều rộng */
+}
+
+.slider-bottom-show {
+    display: flex; /* Sử dụng flexbox để bố trí các item */
+    width: 100%; /* Chiếm toàn bộ chiều rộng */
+}
+
+.slider-bottom-item {
+    flex: 1; /* Mỗi item sẽ chiếm 1/3 chiều rộng */
+    display: flex; 
+    flex-direction: column; /* Xếp các phần tử theo chiều dọc */
+    align-items: center; /* Căn giữa các phần tử bên trong */
+    position: relative; /* Để các chú thích có thể được định vị tương đối */
+    margin: 0 10px; /* Thêm khoảng cách giữa các item */
+}
+
+.slider-bottom-item img {
+    width: 100%; /* Chiếm toàn bộ chiều rộng của item */
+    height: auto; /* Chiều cao tự động để giữ tỷ lệ */
+    object-fit: cover; /* Cắt ảnh để giữ tỷ lệ */
+}
+
+.caption-wrapper {
+    position: absolute; /* Đặt vị trí tương đối để xếp trên ảnh */
+    bottom: 0; /* Đặt ở dưới cùng của ảnh */
+    left: 0; /* Đặt ở bên trái */
+    right: 0; /* Đặt ở bên phải */
+    background-color: rgba(0, 0, 0, 0.5); /* Nền mờ */
+    padding: 10px; /* Khoảng đệm cho phần chú thích */
+    box-sizing: border-box; /* Đảm bảo padding không ảnh hưởng đến chiều rộng */
+    text-align: center; /* Căn giữa văn bản */
+}
+
+.caption-full {
+    font-size: 12px; /* Kích thước chữ cho phần caption */
+    color: #fff; /* Màu chữ trắng */
+}
+
+.caption a {
+    color: #fff; /* Màu chữ liên kết */
+    text-decoration: none; /* Không gạch chân */
+}
+
+
+.caption a:hover {
+    text-decoration: underline; 
+}section ul li a:hover {
+    text-decoration: underline;
+}
+.btn:hover{
+    color:#fff;
+}.btn {
+    font-size: 35px;
+    color: #999;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: 0.5s;
+    cursor: pointer;
+}.btn-left {
+    left: 10px;
+}.btn-right {
+    right: 10px;
+}

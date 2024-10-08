@@ -31,3 +31,11 @@ function updateSlider() {
     // Dịch chuyển slider 2
     document.querySelector('.slider-bottom-show').style.transform = `translateX(${translateValue}%)`;
 }
+// lượt xem
+// Lấy phần tử p có class "viewed"
+const viewedElement = document.querySelector('.viewed');
+
+// Lấy số lượt xem từ nội dung bên trong phần tử
+const viewedCount = viewedElement.textContent.trim();
+
+console.log(viewedCount); // In ra số lượt xem
